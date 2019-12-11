@@ -1,0 +1,32 @@
+.pagination__list {
+  position: fixed;
+  top: 33%;
+  right: 3%;
+  z-index: 2;
+}
+
+.pagination__dot {
+  display: block;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  margin-bottom: 3px;
+  position: relative;
+
+  &--active {
+    border-color: $white;
+  }
+
+  &:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: $white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,77 @@
+// @import url("https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap&subset=cyrillic");
+
+@font-face {
+  font-family: "alegreya-sans-bold";
+  src: url("../../css/fonts/subset-AlegreyaSans-Bold.woff2") format("woff2"),
+    url("../../css/fonts/subset-AlegreyaSans-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "alegreya-sans-extrabold";
+  src: url("../../css/fonts/subset-AlegreyaSans-ExtraBold.woff2")
+      format("woff2"),
+    url("../../css/fonts/subset-AlegreyaSans-ExtraBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "alegreya-sans-light";
+  src: url("../../css/fonts/subset-AlegreyaSans-Light.woff2") format("woff2"),
+    url("../../css/fonts/subset-AlegreyaSans-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "alegreya-sans-medium";
+  src: url("../../css/fonts/subset-AlegreyaSans-Medium.woff2") format("woff2"),
+    url("../../css/fonts/subset-AlegreyaSans-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "alegreya-sans";
+  src: url("../../css/fonts/subset-AlegreyaSans-Regular.woff2") format("woff2"),
+    url("../../css/fonts/subset-AlegreyaSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "museo-sans-cyrl-500";
+  src: url("../../css/fonts/subset-MuseoSansCyrl-500.woff2") format("woff2"),
+    url("../../css/fonts/subset-MuseoSansCyrl-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin museo() {
+  font-family: "museo-sans-cyrl-500";
+}
+
+@mixin alegreya($style: regular) {
+  font-family: "alegreya-sans", Helvetica, sans-serif;
+
+  @if $style==light {
+    // font-weight: 300;
+    font-family: "alegreya-sans-light", Helvetica, sans-serif;
+  }
+
+  @if $style==regular {
+    font-weight: normal;
+  }
+
+  @if $style==medium {
+    // font-weight: 500;
+    font-family: "alegreya-sans-medium", Helvetica, sans-serif;
+  }
+
+  @if $style==bold {
+    // font-weight: bold;
+    font-family: "alegreya-sans-bold", Helvetica, sans-serif;
+  }
+}
