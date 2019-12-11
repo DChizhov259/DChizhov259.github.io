@@ -3,16 +3,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  // position: absolute;
   padding: 1.2rem 3.5rem;
   color: $white;
-  // z-index: 1;
 }
 
 .promo__container {
   height: 100%;
-  // display: flex;
-  // flex-direction: column;
   @include flexColumn;
 }
 
@@ -20,8 +16,6 @@
   @include flexColumn;
   width: 50%;
   position: relative;
-  // display: flex;
-  // flex-direction: column;
   margin-bottom: 3.5rem;
 }
 

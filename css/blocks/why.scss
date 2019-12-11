@@ -7,15 +7,11 @@
 }
 
 .why__container {
-  // display: flex;
-  // flex-direction: column;
   @include flexColumn;
   padding-top: 4.5rem;
 }
 
 .why__title {
-  // display: flex;
-  // flex-direction: column;
   @include flexColumn;
   align-items: center;
   margin-bottom: 2.6rem;
@@ -36,8 +32,6 @@
 
 .why__item,
 .why__item-desc {
-  // display: flex;
-  // flex-direction: column;
   @include flexColumn;
   align-items: center;
   text-align: center;
