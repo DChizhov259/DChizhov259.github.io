@@ -647,6 +647,11 @@ address {
   margin-right: 2.4rem;
 }
 
+.advantages__icon {
+  max-width: 50px;
+  max-height: 50px;
+}
+
 .advantages__desc {
   max-width: 4rem;
   margin-left: 0.5rem;
