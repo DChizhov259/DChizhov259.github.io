@@ -9,6 +9,7 @@
 
 .promo__container {
   height: 100%;
+  margin-top: 6em;
   @include flexColumn;
 }
 
@@ -66,8 +67,8 @@
   display: block;
   position: absolute;
   transform: translate(-50%, -0%);
-  top: 9%;
   left: 51%;
   max-width: 95%;
   max-height: 102%;
+  // margin-top: 0.5em;
 }

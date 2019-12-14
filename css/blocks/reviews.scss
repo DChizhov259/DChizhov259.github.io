@@ -1,5 +1,6 @@
 .reviews__container {
-  padding-top: 3.1rem;
+  @include flexColumn;
+  // padding-top: 3.1rem;
 
   .title {
     margin-bottom: 1.8rem;
