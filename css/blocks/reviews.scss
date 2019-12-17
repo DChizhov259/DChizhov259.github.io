@@ -1,3 +1,31 @@
+.reviews {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../img/content/reviews-section_berries-left.png),
+      url(../../img/bg/reviews-section_bg-leaf.png);
+    background-repeat: no-repeat;
+    background-position: bottom left 7px, bottom -78px left;
+    transform: translate(0, 82px);
+    z-index: -100;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../img/content/reviews-section_berries-right.png);
+    background-repeat: no-repeat;
+    background-position: top 30px right 10px;
+    z-index: -100;
+  }
+}
+
 .reviews__container {
   @include flexColumn;
   // padding-top: 3.1rem;
@@ -18,7 +46,7 @@
   padding: 50px 170px 35px 50px;
   background-color: $light-gray;
   z-index: -9;
-  background-image: url(../../img/bg/reviews_background.png);
+  background-image: url(../../img/bg/reviews-section_bg-berries.png);
   background-repeat: no-repeat;
   background-position: right top;
   margin-bottom: 1rem;
@@ -31,17 +59,18 @@
     height: 90px;
     border-radius: 50%;
     background-color: $white;
-    transform: translate(420%, -120%);
+    left: 50%;
+    transform: translate(-40%, -120%);
     z-index: -10;
   }
 }
 
-.reviews__photo {
+.reviews__author__photo {
   max-width: 253px;
   max-height: 259px;
 }
 
-.reviews__desc {
+.reviews__author__desc {
   padding-left: 0.8rem;
   padding-top: 0.4rem;
 

@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1100, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>CHOCCO by DChizhov259</title>
@@ -54,59 +57,54 @@
       </header>
 
       <div class="container promo__container">
-        <img
-          class="promo-bars-pic"
-          src="./img/content/main-section_bars.png"
-          alt=""
-        />
-        <div class="promo__order">
-          <h1 class="title promo__title">
-            Натуральные шоколадные батончики
-          </h1>
-          <h3 class="promo__desc">
-            Наши батончики идеально подходят для тех, кто следит за своим
-            здоровьем
-          </h3>
-          <a href="#" class="btn_order">Заказать</a>
+        <div class="promo__main-content">
+          <div class="promo__order">
+            <h1 class="title promo__title">
+              Натуральные шоколадные батончики
+            </h1>
+            <h3 class="promo__desc">
+              Наши батончики идеально подходят для тех, кто следит за своим
+              здоровьем
+            </h3>
+            <a href="#" class="btn_order">Заказать</a>
+          </div>
+          <div class="promo__advantages">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <svg class="advantages__icon" style="stroke: #b0f7ff">
+                  <use xlink:href="./img/svg/sprite.svg#5"></use>
+                </svg>
+                <div class="advantages__desc">
+                  100% натуральный продукт
+                </div>
+              </li>
+              <li class="advantages__item">
+                <svg class="advantages__icon" style="stroke: #b0f7ff">
+                  <use xlink:href="./img/svg/sprite.svg#6"></use>
+                </svg>
+                <div class="advantages__desc">
+                  3-5 дней доставка по РФ
+                </div>
+              </li>
+              <li class="advantages__item">
+                <svg class="advantages__icon" style="stroke: #b0f7ff">
+                  <use xlink:href="./img/svg/sprite.svg#4"></use>
+                </svg>
+                <div class="advantages__desc">
+                  Не портит фигуру
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="promo__advantages">
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <svg class="advantages__icon" style="stroke: #b0f7ff">
-                <use xlink:href="./img/svg/sprite.svg#5"></use>
-              </svg>
-              <div class="advantages__desc">
-                100% натуральный продукт
-              </div>
-            </li>
-            <li class="advantages__item">
-              <svg class="advantages__icon" style="stroke: #b0f7ff">
-                <use xlink:href="./img/svg/sprite.svg#6"></use>
-              </svg>
-              <div class="advantages__desc">
-                3-5 дней доставка по РФ
-              </div>
-            </li>
-            <li class="advantages__item">
-              <svg class="advantages__icon" style="stroke: #b0f7ff">
-                <use xlink:href="./img/svg/sprite.svg#4"></use>
-              </svg>
-              <div class="advantages__desc">
-                Не портит фигуру
-              </div>
-            </li>
-          </ul>
+        <div class="promo__main-image">
+          <img src="./img/content/main-section_bars.png" alt="" />
         </div>
       </div>
     </section>
 
     <section class="section why">
       <div class="container why__container">
-        <img
-          class="why-raspberries-pic"
-          src="./img/content/raspberries.png"
-          alt=""
-        />
         <div class="why__title">
           <h2 class="title">
             Почему Chocco?
@@ -159,6 +157,10 @@
       </div>
     </section>
 
+    <section class="section team">
+      <div class="container team__container"></div>
+    </section>
+
     <section class="section reviews">
       <div class="container reviews__container">
         <h2 class="title">
@@ -167,12 +169,12 @@
         <div class="reviews__main">
           <article class="reviews__author">
             <img
-              class="reviews__photo"
+              class="reviews__author__photo"
               src="./img/content/ava_alena.png"
               alt="Алёна Хмельницкая"
             />
-            <div class="reviews__desc">
-              <div class="reviews__desc-title">
+            <div class="reviews__author__desc">
+              <div class="reviews__author__desc-title">
                 Лучший перекус
               </div>
               <p>
@@ -182,7 +184,7 @@
                 adipisci, dicta illum voluptatem itaque, velit recusandae
                 provident maxime minima autem sapiente. Facere, minima?
               </p>
-              <div class="reviews__desc-author-name">
+              <div class="reviews__author__desc-author-name">
                 Алёна Хмельницкая
               </div>
             </div>

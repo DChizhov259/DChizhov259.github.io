@@ -1,22 +1,76 @@
 .promo {
-  background: url("../../img/bg/main-section_background.png");
+  background-color: #61c4d9;
+  background-image: url("../../img/bg/main-section_bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding: 1.2rem 3.5rem;
+  background-size: 79vh;
+  background-position: bottom right -15px;
   color: $white;
+  z-index: -100;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../img/content/main-section_leaf.png);
+    background-repeat: no-repeat;
+    background-position: bottom left 3%;
+    background-size: 60px;
+    transform: translate(0, 50px);
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../img/content/main-section_blackberries.png),
+      url(../../img/content/main-section_bottom-leafage.png);
+    background-repeat: no-repeat;
+    background-position: bottom right 7%, bottom 23px right 29%;
+    background-size: 115px, 135px;
+    transform: translate(0, 50px);
+    z-index: 1;
+  }
+
+  &__main-content {
+    margin-top: 5.6rem;
+    margin-left: 2rem;
+    z-index: 20;
+  }
+
+  &__main-image {
+    transform: translate(20px, 0);
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: url(../../img/content/main-section_berries.png),
+        url(../../img/content/main-section_right-leafage.png);
+      background-repeat: no-repeat;
+      background-position: bottom left 53px, bottom 17% right -8px;
+      background-size: 45%, 45%;
+      transform: translate(0, 30px);
+      z-index: 10;
+    }
+  }
 }
 
 .promo__container {
   height: 100%;
-  margin-top: 6em;
-  @include flexColumn;
+  margin-top: -0.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .promo__order {
   @include flexColumn;
-  width: 50%;
-  position: relative;
   margin-bottom: 3.5rem;
 }
 
@@ -49,16 +103,20 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-right: 2.4rem;
+  margin-right: 2.9rem;
+
+  &:nth-last-child(1) {
+    margin-right: 0;
+  }
 }
 
 .advantages__icon {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 44px;
+  max-height: 44px;
 }
 
 .advantages__desc {
-  max-width: 4rem;
+  width: 65px;
   margin-left: 0.5rem;
   line-height: 0.9rem;
 }
@@ -70,5 +128,4 @@
   left: 51%;
   max-width: 95%;
   max-height: 102%;
-  // margin-top: 0.5em;
 }

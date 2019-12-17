@@ -383,6 +383,18 @@ template {
   font-style: normal;
 }
 
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -399,7 +411,8 @@ body {
 }
 
 .container {
-  width: 980px;
+  width: 95%;
+  max-width: 980px;
   margin: 0 auto;
   height: 100%;
 }
@@ -487,7 +500,8 @@ button {
   display: block;
   width: 980px;
   z-index: 100;
-  margin-top: 0.9rem;
+  margin-top: 0.42rem;
+  top: 0.75rem;
   right: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
@@ -506,15 +520,13 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.header__wrapper {
-  margin-left: 0.5rem;
+  max-width: 940px;
+  margin-left: 26px;
 }
 
 .logo {
   font-family: "museo-sans-cyrl-500";
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   color: #fff;
   line-height: 1rem;
 }
@@ -584,24 +596,84 @@ address {
 }
 
 .promo {
-  background: url("../../img/bg/main-section_background.png");
+  background-color: #61c4d9;
+  background-image: url("../../img/bg/main-section_bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding: 1.2rem 3.5rem;
+  background-size: 79vh;
+  background-position: bottom right -15px;
   color: #fff;
+  z-index: -100;
+}
+
+.promo::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../img/content/main-section_leaf.png);
+  background-repeat: no-repeat;
+  background-position: bottom left 3%;
+  background-size: 60px;
+  -webkit-transform: translate(0, 50px);
+  -ms-transform: translate(0, 50px);
+  transform: translate(0, 50px);
+  z-index: 1;
+}
+
+.promo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../img/content/main-section_blackberries.png), url(../../img/content/main-section_bottom-leafage.png);
+  background-repeat: no-repeat;
+  background-position: bottom right 7%, bottom 23px right 29%;
+  background-size: 115px, 135px;
+  -webkit-transform: translate(0, 50px);
+  -ms-transform: translate(0, 50px);
+  transform: translate(0, 50px);
+  z-index: 1;
+}
+
+.promo__main-content {
+  margin-top: 5.6rem;
+  margin-left: 2rem;
+  z-index: 20;
+}
+
+.promo__main-image {
+  -webkit-transform: translate(20px, 0);
+  -ms-transform: translate(20px, 0);
+  transform: translate(20px, 0);
+}
+
+.promo__main-image::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../img/content/main-section_berries.png), url(../../img/content/main-section_right-leafage.png);
+  background-repeat: no-repeat;
+  background-position: bottom left 53px, bottom 17% right -8px;
+  background-size: 45%, 45%;
+  -webkit-transform: translate(0, 30px);
+  -ms-transform: translate(0, 30px);
+  transform: translate(0, 30px);
+  z-index: 10;
 }
 
 .promo__container {
   height: 100%;
-  margin-top: 6em;
+  margin-top: -0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .promo__order {
@@ -612,8 +684,6 @@ address {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 50%;
-  position: relative;
   margin-bottom: 3.5rem;
 }
 
@@ -656,16 +726,20 @@ address {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin-right: 2.4rem;
+  margin-right: 2.9rem;
+}
+
+.advantages__item:nth-last-child(1) {
+  margin-right: 0;
 }
 
 .advantages__icon {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 44px;
+  max-height: 44px;
 }
 
 .advantages__desc {
-  max-width: 4rem;
+  width: 65px;
   margin-left: 0.5rem;
   line-height: 0.9rem;
 }
@@ -681,14 +755,19 @@ address {
   max-height: 102%;
 }
 
-.why {
-  background: url("../../img/bg/best_leaf.png");
+.why::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../img/content/why-section_raspberries.png), url(../../img/bg/why-section_bg-leaf.png);
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position: left center;
-  -webkit-transform: translate(0%, 3%);
-  -ms-transform: translate(0%, 3%);
-  transform: translate(0%, 3%);
+  background-position: bottom left, top 25% left;
+  -webkit-transform: translate(0, 112px);
+  -ms-transform: translate(0, 112px);
+  transform: translate(0, 112px);
+  z-index: -100;
 }
 
 .why__container {
@@ -841,6 +920,33 @@ address {
   left: 0;
 }
 
+.reviews::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../img/content/reviews-section_berries-left.png), url(../../img/bg/reviews-section_bg-leaf.png);
+  background-repeat: no-repeat;
+  background-position: bottom left 7px, bottom -78px left;
+  -webkit-transform: translate(0, 82px);
+  -ms-transform: translate(0, 82px);
+  transform: translate(0, 82px);
+  z-index: -100;
+}
+
+.reviews::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../img/content/reviews-section_berries-right.png);
+  background-repeat: no-repeat;
+  background-position: top 30px right 10px;
+  z-index: -100;
+}
+
 .reviews__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -876,7 +982,7 @@ address {
   padding: 50px 170px 35px 50px;
   background-color: #f8faf9;
   z-index: -9;
-  background-image: url(../../img/bg/reviews_background.png);
+  background-image: url(../../img/bg/reviews-section_bg-berries.png);
   background-repeat: no-repeat;
   background-position: right top;
   margin-bottom: 1rem;
@@ -890,30 +996,31 @@ address {
   height: 90px;
   border-radius: 50%;
   background-color: #fff;
-  -webkit-transform: translate(420%, -120%);
-  -ms-transform: translate(420%, -120%);
-  transform: translate(420%, -120%);
+  left: 50%;
+  -webkit-transform: translate(-40%, -120%);
+  -ms-transform: translate(-40%, -120%);
+  transform: translate(-40%, -120%);
   z-index: -10;
 }
 
-.reviews__photo {
+.reviews__author__photo {
   max-width: 253px;
   max-height: 259px;
 }
 
-.reviews__desc {
+.reviews__author__desc {
   padding-left: 0.8rem;
   padding-top: 0.4rem;
 }
 
-.reviews__desc-title {
+.reviews__author__desc-title {
   font-family: "alegreya-sans", Helvetica, sans-serif;
   font-family: "alegreya-sans-medium", Helvetica, sans-serif;
   font-size: 1.5rem;
   margin-bottom: 0.9rem;
 }
 
-.reviews__desc p {
+.reviews__author__desc p {
   font-family: "alegreya-sans", Helvetica, sans-serif;
   font-weight: normal;
   font-size: 0.9rem;
@@ -921,7 +1028,7 @@ address {
   margin-bottom: 1.2rem;
 }
 
-.reviews__desc-author-name {
+.reviews__author__desc-author-name {
   font-family: "alegreya-sans", Helvetica, sans-serif;
   font-family: "alegreya-sans-medium", Helvetica, sans-serif;
   font-size: 0.9rem;
