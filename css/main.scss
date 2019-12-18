@@ -1,5 +1,6 @@
 //colors
 $green: #0f5a47;
+$green-triangle: #2f7060;
 $light-gray: #f8faf9;
 $gray: #f2f5f4;
 $dark-gray: #666666;
@@ -23,5 +24,6 @@ $z-fixed-menu: 100;
 @import "blocks/btn";
 @import "blocks/promo";
 @import "blocks/why";
+@import "blocks/team";
 @import "blocks/reviews";
 @import "blocks/pagination";
