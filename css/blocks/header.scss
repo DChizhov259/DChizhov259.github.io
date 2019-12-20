@@ -2,14 +2,17 @@
   position: absolute;
   display: block;
   width: 980px;
-  z-index: 0;
+  z-index: 1;
   margin-top: 0.42rem;
   // margin: 0 auto;
   top: rem(12px);
   right: 50%;
   left: 50%;
   transform: translate(-50%, 0%);
-  min-height: 100%;
+
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .header__container {
@@ -17,6 +20,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 940px;
+  height: 100%;
   margin-left: 26px;
 }
 

@@ -40,10 +40,15 @@
     margin-top: 5.6rem;
     margin-left: 2rem;
     z-index: 20;
+
+    @include tablets {
+      margin: 0;
+    }
   }
 
   &__main-image {
     transform: translate(20px, 0);
+    max-width: 100%;
 
     &::before {
       content: "";
@@ -59,6 +64,10 @@
       transform: translate(0, 30px);
       z-index: 10;
     }
+
+    @include tablets {
+      margin-top: 10%;
+    }
   }
 }
 
@@ -67,11 +76,21 @@
   margin-top: -0.5rem;
   display: flex;
   align-items: center;
+
+  @include tablets {
+    flex-direction: column-reverse;
+  }
 }
 
 .promo__order {
   @include flexColumn;
   margin-bottom: 3.5rem;
+
+  @include tablets {
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 
 .promo__title {
@@ -80,6 +99,10 @@
   color: $white;
   text-align: left;
   margin-bottom: 0.15em;
+
+  @include tablets {
+    text-align: center;
+  }
 }
 
 .promo__desc {
@@ -93,6 +116,10 @@
 .promo__advantages {
   position: relative;
   max-width: 26rem;
+
+  @include tablets {
+    margin: 0 auto;
+  }
 }
 
 .advantages__list {

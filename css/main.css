@@ -500,7 +500,7 @@ button {
   position: absolute;
   display: block;
   width: 980px;
-  z-index: 0;
+  z-index: 1;
   margin-top: 0.42rem;
   top: 0.6rem;
   right: 50%;
@@ -508,7 +508,12 @@ button {
   -webkit-transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
-  min-height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
 }
 
 .header__container {
@@ -522,6 +527,7 @@ button {
   -ms-flex-align: center;
   align-items: center;
   max-width: 940px;
+  height: 100%;
   margin-left: 26px;
 }
 
@@ -559,6 +565,12 @@ address {
   transform: translate(-10%, -50%);
   background-image: url(../../img/icons/ico_phone.png);
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -648,10 +660,17 @@ address {
   z-index: 20;
 }
 
+@media screen and (max-width: 768px) {
+  .promo__main-content {
+    margin: 0;
+  }
+}
+
 .promo__main-image {
   -webkit-transform: translate(20px, 0);
   -ms-transform: translate(20px, 0);
   transform: translate(20px, 0);
+  max-width: 100%;
 }
 
 .promo__main-image::before {
@@ -670,6 +689,12 @@ address {
   z-index: 10;
 }
 
+@media screen and (max-width: 768px) {
+  .promo__main-image {
+    margin-top: 10%;
+  }
+}
+
 .promo__container {
   height: 100%;
   margin-top: -0.5rem;
@@ -679,6 +704,15 @@ address {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .promo__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
 }
 
 .promo__order {
@@ -692,6 +726,16 @@ address {
   margin-bottom: 3.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .promo__order {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
 .promo__title {
   font-family: "alegreya-sans", Helvetica, sans-serif;
   font-family: "alegreya-sans-bold", Helvetica, sans-serif;
@@ -699,6 +743,12 @@ address {
   color: #fff;
   text-align: left;
   margin-bottom: 0.15em;
+}
+
+@media screen and (max-width: 768px) {
+  .promo__title {
+    text-align: center;
+  }
 }
 
 .promo__desc {
@@ -713,6 +763,12 @@ address {
 .promo__advantages {
   position: relative;
   max-width: 26rem;
+}
+
+@media screen and (max-width: 768px) {
+  .promo__advantages {
+    margin: 0 auto;
+  }
 }
 
 .advantages__list {
