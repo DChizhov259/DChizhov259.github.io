@@ -11,4 +11,9 @@
   font-size: 19px;
   font-family: "alegreya-sans-extrabold";
   line-height: 1.5rem; //надпись чуть ниже
+  z-index: 100;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

@@ -500,7 +500,7 @@ button {
   position: absolute;
   display: block;
   width: 980px;
-  z-index: 100;
+  z-index: 0;
   margin-top: 0.42rem;
   top: 0.6rem;
   right: 50%;
@@ -593,6 +593,11 @@ address {
   font-size: 19px;
   font-family: "alegreya-sans-extrabold";
   line-height: 1.5rem;
+  z-index: 100;
+}
+
+.btn_order:hover, .order__form-button:hover {
+  cursor: pointer;
 }
 
 .promo {
@@ -602,7 +607,7 @@ address {
   background-size: 79vh;
   background-position: bottom right -15px;
   color: #fff;
-  z-index: -100;
+  z-index: 0;
 }
 
 .promo::before {
@@ -1284,7 +1289,7 @@ address {
 .order {
   background: url("../../img/bg/order-section_bg.png") center no-repeat;
   background-size: cover;
-  z-index: -100;
+  z-index: 0;
 }
 
 .order .order__title {
@@ -1304,7 +1309,7 @@ address {
   -webkit-transform: translate(0, -173px);
   -ms-transform: translate(0, -173px);
   transform: translate(0, -173px);
-  z-index: 0;
+  z-index: 1;
 }
 
 .order__container {
@@ -1333,7 +1338,7 @@ address {
   -webkit-transform: translate(0, 0px);
   -ms-transform: translate(0, 0px);
   transform: translate(0, 0px);
-  z-index: 0;
+  z-index: -90;
 }
 
 .order__container::after {
@@ -1348,7 +1353,7 @@ address {
   -webkit-transform: translate(0, 0px);
   -ms-transform: translate(0, 0px);
   transform: translate(0, 0px);
-  z-index: 0;
+  z-index: -90;
 }
 
 .order__form-button {
@@ -1431,7 +1436,7 @@ address {
 }
 
 .order__form-input:focus {
-  border-color: #dde3bd;
+  outline: #dde3bd 0.1rem solid;
 }
 
 .order__form-block {
@@ -1645,7 +1650,7 @@ address {
   position: fixed;
   top: 33%;
   right: 3%;
-  z-index: 2;
+  z-index: 100;
 }
 
 .pagination__dot {

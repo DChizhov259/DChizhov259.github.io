@@ -1,7 +1,7 @@
 .order {
   background: url("../../img/bg/order-section_bg.png") center no-repeat;
   background-size: cover;
-  z-index: -100;
+  z-index: 0;
 
   .order__title {
     color: $green;
@@ -18,7 +18,7 @@
     background-repeat: no-repeat;
     background-position: top 5px right -16px;
     transform: translate(0, -173px);
-    z-index: 0;
+    z-index: 1;
   }
 
   // &__form {
@@ -41,7 +41,7 @@
     background-repeat: no-repeat;
     background-position: bottom 17% right;
     transform: translate(0, 0px);
-    z-index: 0;
+    z-index: -90;
   }
 
   &::after {
@@ -54,7 +54,7 @@
     background-repeat: no-repeat;
     background-position: bottom 13% left 2%;
     transform: translate(0, 0px);
-    z-index: 0;
+    z-index: -90;
   }
 }
 
@@ -150,7 +150,9 @@
   }
 
   &:focus {
-    border-color: #dde3bd;
+    outline: #dde3bd rem(2px) solid;
+    // border: rem(10px) solid;
+    // border-color: #dde3bd;
   }
 }
 
