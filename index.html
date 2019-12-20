@@ -115,7 +115,9 @@
         <div class="why__items">
           <ul class="why__item-list">
             <li class="why__item">
-              <div class="why__item-ico_useful"></div>
+              <svg class="why__item-ico_useful">
+                <use xlink:href="./img/svg/sprite.svg#useful"></use>
+              </svg>
               <div class="why__item-desc">
                 <div class="why__item-desc__title">
                   Полезно
@@ -127,7 +129,9 @@
               </div>
             </li>
             <li class="why__item">
-              <div class="why__item-ico_delicious"></div>
+              <svg class="why__item-ico_delicious">
+                <use xlink:href="./img/svg/sprite.svg#delicious"></use>
+              </svg>
               <div class="why__item-desc">
                 <div class="why__item-desc__title">
                   Вкусно
@@ -139,7 +143,9 @@
               </div>
             </li>
             <li class="why__item">
-              <div class="why__item-ico_nutritious"></div>
+              <svg class="why__item-ico_nutritious">
+                <use xlink:href="./img/svg/sprite.svg#nutritious"></use>
+              </svg>
               <div class="why__item-desc">
                 <div class="why__item-desc__title">
                   Питательно
@@ -374,6 +380,145 @@
       </div>
     </section>
     <!-- </div> -->
+
+    <section class="section order">
+      <div class="container order__container">
+        <h2 class="title order__title">Закажите доставку</h2>
+        <div class="order__form">
+          <form class="order__form-tag" id="order-form">
+            <div class="order__form-col">
+              <div class="order__form-row order__form-row_double">
+                <label class="order__form-block">
+                  <div class="order__form-label">Имя</div>
+                  <input
+                    class="order__form-input"
+                    name="name"
+                    type="text"
+                    placeholder=""
+                  />
+                </label>
+                <label class="order__form-block">
+                  <div class="order__form-label">Телефон</div>
+                  <input
+                    class="order__form-input phone-mask"
+                    name="phone"
+                    type="text"
+                    placeholder="89022348912"
+                  />
+                </label>
+              </div>
+              <div class="order__form-row">
+                <label class="order__form-block">
+                  <div class="order__form-label">Улица</div>
+                  <input
+                    class="order__form-input"
+                    name="street"
+                    type="text"
+                    placeholder=""
+                  />
+                </label>
+              </div>
+              <div class="order__form-row order__form-row_quatro">
+                <label class="order__form-block">
+                  <div class="order__form-label">Дом</div>
+                  <input
+                    class="order__form-input"
+                    name="home"
+                    type="text"
+                    placeholder=""
+                  />
+                </label>
+                <label class="order__form-block">
+                  <div class="order__form-label">Корпус</div>
+                  <input
+                    class="order__form-input"
+                    name="part"
+                    type="text"
+                    placeholder=""
+                  />
+                </label>
+                <label class="order__form-block">
+                  <div class="order__form-label">Квартира</div>
+                  <input
+                    class="order__form-input"
+                    name="appt"
+                    type="text"
+                    placeholder=""
+                  />
+                </label>
+                <label class="order__form-block">
+                  <div class="order__form-label">Этаж</div>
+                  <input
+                    class="order__form-input"
+                    name="floor"
+                    type="text"
+                    placeholder=""
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="order__form-col order__form-col_right">
+              <div class="order__form-row">
+                <label class="order__form-block">
+                  <div class="order__form-label">Комментарий</div>
+                  <textarea
+                    class="order__form-input order__form-input_textarea"
+                    name="comment"
+                  ></textarea>
+                </label>
+              </div>
+              <div class="order__form-buttons">
+                <div class="order__form-row_radio">
+                  <label class="order__radio">
+                    <input
+                      class="order__radio-elem"
+                      name="payment"
+                      type="radio"
+                    />
+                    <div class="order__radio-fake"></div>
+                    <div class="order__radio-title">Потребуется сдача</div>
+                  </label>
+                  <label class="order__radio">
+                    <input
+                      class="order__radio-elem"
+                      name="payment"
+                      type="radio"
+                    />
+                    <div class="order__radio-fake"></div>
+                    <div class="order__radio-title">Оплата по карте</div>
+                  </label>
+                </div>
+                <div class="order__form-row_checkbox">
+                  <label class="order__radio order__radio_checkbox">
+                    <input
+                      class="order__radio-elem"
+                      name="callback"
+                      type="checkbox"
+                    />
+                    <div class="order__radio-fake"></div>
+                    <div class="order__radio-title">Не перезванивать</div>
+                  </label>
+                </div>
+                <div class="order__form-row_buttons">
+                  <input
+                    class="order__form-button"
+                    name=""
+                    type="submit"
+                    value="Заказать"
+                  />
+                  <input
+                    class="order__form-button order__form-button_reset"
+                    name=""
+                    type="reset"
+                    value="Очистить"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <section class="section about">
       <div class="container about__container">
