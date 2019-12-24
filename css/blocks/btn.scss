@@ -16,4 +16,8 @@
   &:hover {
     cursor: pointer;
   }
+
+  @include tablets {
+    margin: 3vh auto;
+  }
 }

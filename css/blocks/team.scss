@@ -18,23 +18,41 @@
   @include flexColumn;
   padding-left: 0.7rem;
   padding-right: 1.4rem;
+
+  @include tablets {
+    padding: 0 20%;
+  }
 }
 
 .team__title {
   margin-top: -20.8rem;
   margin-bottom: 2.3rem;
+
+  @include tablets {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .team__items-list {
   display: flex;
   justify-content: space-between;
   // position: relative;
+
+  @include tablets {
+    flex-wrap: wrap;
+  }
 }
 
 .team__item {
   @include flexColumn;
   width: rem(220px);
   // position: absolute;
+
+  @include tablets {
+    // display: block;
+    height: 38vh;
+  }
 
   &-ava {
     margin-bottom: 0.8rem;
@@ -87,6 +105,11 @@
   max-width: rem(220px);
   height: rem(290px);
   @include cover;
+
+  @include tablets {
+    width: rem(225px);
+    height: rem(290px);
+  }
 }
 
 .team__item__desc {

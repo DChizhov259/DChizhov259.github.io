@@ -44,6 +44,10 @@
       width: rem(530px);
       // transition: 0.5s ease; //анимация
 
+      // @include tablets {
+      //   width: 100vw;
+      // }
+
       &::before {
         content: "";
         display: block;
@@ -60,7 +64,15 @@
         display: block;
         // width: rem(535px); //текст зафиксирован для анимации
       }
+
+      @include tablets {
+        width: rem(300px);
+      }
     }
+
+    //  @include tablets {
+    //     width: 100vw;
+    //   }
   }
 }
 
@@ -125,6 +137,10 @@
   width: 100%;
   line-height: rem(24px);
   display: none;
+
+  @include tablets {
+    font-size: rem(18px);
+  }
 
   // @include phones {
   //   padding: rem(25px) rem(15px);

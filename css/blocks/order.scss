@@ -6,6 +6,10 @@
   .order__title {
     color: $green;
     margin-bottom: rem(55px);
+
+    @include tablets {
+      margin-top: 3%;
+    }
   }
 
   &::before {
@@ -84,20 +88,29 @@
     display: block;
     clear: both;
   } // clearfix
+
+  @include tablets {
+    padding: 0 17%;
+  }
 }
 
 .order__form-col {
   float: left;
   width: 47%;
   margin-left: 2.7%;
-  // @include tablets {
-  //   width: 100%;
-  //   float: none;
-  //   margin-left: 0;
-  // }
+
+  @include tablets {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
 
   &_right {
-    margin-left: 2.1%;
+    margin-left: 2.1%; 
+    
+    @include tablets {
+      margin-left: 0;
+    }
 
     .order__form-row {
       margin-bottom: rem(13px);
@@ -114,12 +127,26 @@
 
   &_radio {
     margin-bottom: rem(4px);
+
+    @include tablets {
+      padding: 7% 0;
+    }
   }
+
   &_checkbox {
     margin-bottom: rem(40px);
+
+    @include tablets {
+      margin-bottom: 3%;
+    }
   }
+
   &_buttons {
     margin-bottom: rem(12px);
+
+    @include tablets {
+      padding-left: 10%;
+    }
   }
 }
 
@@ -174,6 +201,12 @@
   .order__form-block {
     width: calc(100% / 4 - rem(20px));
     margin-left: rem(20px);
+  }
+}
+
+.order__form-buttons {
+  @include tablets {
+    text-align: center;
   }
 }
 
